@@ -63,7 +63,15 @@
           <tagNameFormat>v@{project.version}</tagNameFormat>
         </configuration>
       </plugin>
-			<plugin>
+		
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>maven-gpg-plugin</artifactId>
+    <configuration>
+        <skip>true</skip>
+    </configuration>
+</plugin>
+	<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>2.6</version>
@@ -120,11 +128,18 @@
 						<arguments>-Psonatype-oss-release</arguments>
 					</configuration>
 				</plugin>
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>maven-gpg-plugin</artifactId>
+    <configuration>
+        <skip>true</skip>
+    </configuration>
+</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
 
-	<profiles>
+<!--	<profiles>
 		<profile>
 			<id>sign</id>
 			<build>
@@ -146,7 +161,7 @@
 			</build>
 		</profile>
 	</profiles>
-
+-->
 	<distributionManagement>
 		<repository>
 			<id>sonatype-nexus-staging</id>
