@@ -14,16 +14,16 @@
 	</parent>
 
 	<scm>
-		<connection>scm:git:git@github.com:elizabetht/StudentEnrollmentWithREST.git</connection>
-		<developerConnection>scm:git:git@github.com:elizabetht/StudentEnrollmentWithREST.git</developerConnection>
-		<url>git@github.com:elizabetht/StudentEnrollmentWithREST.git</url>			
+		<connection>scm:git:git@github.com:karunakar1122v/StudentEnrollment.git</connection>
+		<developerConnection>scm:git:git@github.com:karunakar1122v/StudentEnrollment.git</developerConnection>
+		<url>git@github.com:karunakar1122v/StudentEnrollment.git.git</url>			
 	  <tag>HEAD</tag>
   </scm>
 	<developers>
 		<developer>
-			<id>elizabetht</id>
-			<name>Elizabeth Thomas</name>
-			<email>email2eliza@gmail.com</email>
+			<id>karunakar</id>
+			<name>Karunakar Reddy</name>
+			<email>karna1122.v@gmail.com</email>
 		</developer>
 	</developers>
 
@@ -55,7 +55,14 @@
 					</execution>
 				</executions>
 			</plugin>
-
+<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+        <configuration>
+          <tagNameFormat>v@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
