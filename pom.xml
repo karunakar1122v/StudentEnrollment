@@ -122,7 +122,7 @@
 					<artifactId>maven-release-plugin</artifactId>
 					<version>2.4.2</version>
 					<configuration>
-						<tagBase>https://github.com/karunakar1122v/StudentEnrollmen/tags</tagBase>
+						<!-- <tagBase>https://github.com/karunakar1122v/StudentEnrollmen/tags</tagBase> -->
 						<mavenExecutorId>forked-path</mavenExecutorId>
 						<useReleaseProfile>false</useReleaseProfile>
 						<arguments>-Psonatype-oss-release</arguments>
