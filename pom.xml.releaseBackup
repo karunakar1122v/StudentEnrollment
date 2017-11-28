@@ -5,7 +5,7 @@
 	<groupId>com.github.elizabetht</groupId>
 	<artifactId>StudentEnrollmentWithREST</artifactId>
 	<packaging>war</packaging>
-	<version>2.0</version>
+	<version>1.4-SNAPSHOT</version>
 	<name>StudentEnrollmentWithREST</name>
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
@@ -17,7 +17,7 @@
 		<connection>scm:git:git@github.com:karunakar1122v/StudentEnrollment.git</connection>
 		<developerConnection>scm:git:git@github.com:karunakar1122v/StudentEnrollment.git</developerConnection>
 		<url>git@github.com:karunakar1122v/StudentEnrollment.git.git</url>			
-	  <tag>new</tag>
+	  <tag>HEAD</tag>
   </scm>
 	<developers>
 		<developer>
@@ -114,7 +114,7 @@
 					<artifactId>maven-release-plugin</artifactId>
 					<version>2.4.2</version>
 					<configuration>
-						<tagBase>https://github.com/karunakar1122v/StudentEnrollmen/tags</tagBase>
+						<tagBase>https://github.com/elizabetht/StudentEnrollmentWithREST/tags</tagBase>
 						<mavenExecutorId>forked-path</mavenExecutorId>
 						<useReleaseProfile>false</useReleaseProfile>
 						<arguments>-Psonatype-oss-release</arguments>
